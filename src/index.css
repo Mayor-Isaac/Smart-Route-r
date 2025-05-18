@@ -1,0 +1,64 @@
+@import url('https://unpkg.com/leaflet/dist/leaflet.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .loader {
+    width: 45px;
+    aspect-ratio: 0.75;
+    --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
+    background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+    background-size: 20% 50%;
+    animation: loading 1s infinite linear;
+  }
+
+  @keyframes loading {
+    20% {
+      background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+    60% {
+      background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+    80% {
+      background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+  }
+}
+
+.pop-up-bad .leaflet-popup-content-wrapper {
+  border-left: 5px solid #dc2626;
+  padding-left: 1rem;
+}
+.pop-up-good .leaflet-popup-content-wrapper {
+  border-left: 5px solid #16a34a;
+  padding-left: 1rem;
+}
+.pop-up-warning .leaflet-popup-content-wrapper {
+  border-left: 5px solid #ca8a04;
+  padding-left: 1rem;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+input::placeholder {
+  color: #16a34a;
+}
+.sidebar {
+  animation: sideBar 0.3s ease-in-out;
+}
+@keyframes sideBar {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

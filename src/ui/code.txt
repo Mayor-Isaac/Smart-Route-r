@@ -1,0 +1,88 @@
+const roadData = [
+  {
+    lat: 7.312,
+    lng: 5.1355,
+    anomaly: 'pothole',
+    status: 'bad',
+    timestamp: '2025-05-12T09:00:00Z',
+    description:
+      'Large pothole near the FUTA North Gate intersection. Needs urgent repair.',
+  },
+  {
+    lat: 7.3122,
+    lng: 5.1358,
+    anomaly: 'cracked surface',
+    status: 'bad',
+    timestamp: '2025-05-12T09:05:00Z',
+    description:
+      'Visible cracks along Obanla Road causing discomfort. Commonly busy during the day.',
+  },
+  {
+    lat: 7.313,
+    lng: 5.1362,
+    anomaly: 'smooth road',
+    status: 'good',
+    timestamp: '2025-05-12T09:10:00Z',
+    description:
+      'Smooth road surface near FUTA Senate building. No anomalies detected.',
+  },
+  {
+    lat: 7.314,
+    lng: 5.137,
+    anomaly: 'speed bump',
+    status: 'warning',
+    timestamp: '2025-05-12T09:15:00Z',
+    description:
+      'Unpainted speed bump just before Hilltop junction. Might be hard to notice at night.',
+  },
+  {
+    lat: 7.3145,
+    lng: 5.1375,
+    anomaly: 'smooth road',
+    status: 'good',
+    timestamp: '2025-05-12T09:20:00Z',
+    description:
+      'Clean and smooth road stretch near the Students’ Union Building.',
+  },
+  {
+    lat: 7.315,
+    lng: 5.138,
+    anomaly: 'pothole',
+    status: 'bad',
+    timestamp: '2025-05-12T09:25:00Z',
+    description:
+      'Deep pothole close to the rear gate exit. May cause tire damage.',
+  },
+  {
+    lat: 7.3109,
+    lng: 5.1341,
+    anomaly: 'speed bump',
+    status: 'warning',
+    timestamp: '2025-05-12T08:55:00Z',
+    description: 'Minor Errosion patches near Hilltop, FUTA',
+  },
+  {
+    lat: 7.3094,
+    lng: 5.1405,
+    anomaly: 'smooth road',
+    status: 'good',
+    timestamp: '2025-05-12T08:35:00Z',
+    description: 'Freshly tarred lanes along Alumni Junction.',
+  },
+  {
+    lat: 7.3099,
+    lng: 5.1388,
+    anomaly: 'pothole',
+    status: 'bad',
+    timestamp: '2025-05-12T08:45:00Z',
+    description: 'Flood-prone zone and potholes beside Obafemi Awolowo Hall.',
+  },
+  {
+    lat: 7.3101,
+    lng: 5.1372,
+    anomaly: 'Speed bumps and cracks',
+    status: 'warning',
+    timestamp: '2025-05-12T08:25:00Z',
+    description: 'Minor cracks and occasional bumps near Lecture Theatre.',
+  },
+];
