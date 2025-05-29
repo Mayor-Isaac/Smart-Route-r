@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import Close from './Close';
+
 export default function SideList({ closeBar }) {
   const [showAlt, setShowAlt] = useState(false);
   const [currLocation, setCurrentLocation] = useState('');
@@ -112,7 +114,7 @@ export default function SideList({ closeBar }) {
             {item.navItems?.map((navItem, key) => {
               return (
                 <div key={key} className="pl-8">
-                  <p className="cursor-pointer text-green-400 transition hover:font-bold hover:text-green-600 hover:underline">
+                  <p className="cursor-pointer text-green-500 transition hover:font-bold hover:text-green-600 hover:underline">
                     {navItem}
                   </p>
                 </div>
@@ -120,14 +122,11 @@ export default function SideList({ closeBar }) {
             })}
             {showAlt && item.routes && (
               <div className="absolute -top-2 right-0 z-[999999999] rounded border border-green-500 bg-gray-100 p-4">
-                <span
-                  className="my-2 block cursor-pointer text-right text-green-600 transition hover:font-bold"
-                  onClick={() => {
+                <Close
+                  closeBar={() => {
                     setShowAlt(false);
                   }}
-                >
-                  X
-                </span>
+                />
                 {item.routes.map((route, key) => {
                   return (
                     <div key={key} onClick={{ closeBar }}>
